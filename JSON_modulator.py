@@ -7,7 +7,7 @@ class JSON_modulator:
         self.json = json
 
     def key_remove(self, position: str, key:str) -> bool:
-        pass
+        print(self.json["glossary"])
 
     def subjson_add(self, position: str, subjson:dict) -> bool:
         pass
@@ -47,4 +47,4 @@ if '__main__' == __name__:
     mymod.listitem_delete('glossary^GlossDiv^GlossList^GlossEntry^GlossDef^GlossSeeAlso', "GML")
     mymod.key_rename('glossary^GlossDiv^GlossList', 'new_key')
     mymod.value_replace('glossary^GlossDiv^GlossList', 'new_value')
-    print(json.dumps(mymod.json,indent=4))
+    # print(json.dumps(mymod.json,indent=4))

@@ -6,6 +6,9 @@ class JSON_modulator:
     def __init__(self, json):
         self.json = json
 
+    def key_remove(self, position: str, key:str) -> bool:
+        pass
+
     def subjson_add(self, position: str, subjson:dict) -> bool:
         pass
 
